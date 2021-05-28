@@ -1,0 +1,9 @@
+C2A Greyhound: String,speed: double,range: int,price: long
+C20: String,speed: double,range: int,price: long
+C37: String,speed: double,range: int,price: long
+F5FN Tiger II: String,speed: double,range: int,price: long
+F16: String,speed: double,range: int,price: long
+FA18: String,speed: double,range: int,price: long
+model: String,speed: double,range: int,price: long
+model: String,speed: double,range: int,price: long
+model: String,speed: double,range: int,price: long
