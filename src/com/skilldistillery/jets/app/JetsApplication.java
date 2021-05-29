@@ -5,10 +5,11 @@ import java.util.Scanner;
 import com.skilldistillery.jets.entity.AirField;
 import com.skilldistillery.jets.entity.CargoPlane;
 import com.skilldistillery.jets.entity.FighterJet;
+import com.skilldistillery.jets.entity.Jet;
 import com.skilldistillery.jets.entity.JetImpl;
 
 public class JetsApplication {
-	private AirField airField;
+	private AirField airField = new AirField();
 	private Scanner kb = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class JetsApplication {
 		while (true) {
 			displayUserMenu();
 			System.out.println();
+//			airField = new AirField();
 		}
 	}
 
@@ -36,6 +38,7 @@ public class JetsApplication {
 		System.out.println("9. Quit.");
 		System.out.print("Selection: ");
 		int choice = kb.nextInt();
+		kb.nextLine();
 
 		switch (choice) {
 		case 1:
@@ -137,10 +140,15 @@ public class JetsApplication {
 		airField.parkJet(userCreated);
 	}
 
-	public void removeJet() {
-
+	public void removeJet() { // need code
+		System.out.println("Which jeet would you like to remove?");
+		for (Jet jet : airField.getJets()) {
+			airField.getJets().remove(jet);
+		}
+		System.out.println("");
 	}
 
+	
 	private void quitProgram() {
 		System.out.println("Exiting the Fleet, Goodbye!");
 	}
