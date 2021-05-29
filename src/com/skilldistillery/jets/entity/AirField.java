@@ -9,8 +9,7 @@ import java.util.Scanner;
 
 public class AirField {
 
-	AirField af = new AirField();
-	List<Jet> jets1 = af.readJetsFromFile("jets.txt");
+	List<Jet> jets1 = readJetsFromFile("jets.txt");
 	private List<Jet> jets;
 	private Scanner kb = new Scanner(System.in);
 
